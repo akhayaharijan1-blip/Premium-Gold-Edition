@@ -45,6 +45,7 @@
       50% { transform: translateY(-20px); }
     }
   </style>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 
 <body>
@@ -57,7 +58,24 @@
     <p>Click the gift to unlock 🎉</p>
   </div>
 <script>
+<script>
 function openGift() {
+
+  confetti({
+    particleCount: 200,
+    spread: 120,
+    origin: { y: 0.6 }
+  });
+
+  document.body.innerHTML = `
+    <div style="margin-top:15%; text-align:center; color:white; font-family:Arial;">
+      <h1 style="color:gold; font-size:50px;">🎉 Surprise Opened 🎉</h1>
+      <p style="font-size:22px;">Aapke liye ek special birthday blessing ❤️</p>
+      <div style="font-size:80px;">🎂🎊✨</div>
+    </div>
+  `;
+}
+</script>
   document.body.innerHTML = `
     <div style="margin-top:15%; text-align:center; color:white; font-family:Arial;">
       <h1 style="color:gold; font-size:50px;">🎉 Surprise Opened 🎉</h1>
