@@ -53,9 +53,19 @@
     <h1>Happy Birthday 🎂</h1>
     <p>A special surprise is waiting for you...</p>
 
-    <div class="gift">🎁</div>
+    <div class="gift" onclick="openGift()">🎁</div>
     <p>Click the gift to unlock 🎉</p>
   </div>
-
+<script>
+function openGift() {
+  document.body.innerHTML = `
+    <div style="margin-top:15%; text-align:center; color:white; font-family:Arial;">
+      <h1 style="color:gold; font-size:50px;">🎉 Surprise Opened 🎉</h1>
+      <p style="font-size:22px;">Aapke liye ek special birthday blessing ❤️</p>
+      <div style="font-size:80px;">🎂🎊✨</div>
+    </div>
+  `;
+}
+</script>
 </body>
 </html>
