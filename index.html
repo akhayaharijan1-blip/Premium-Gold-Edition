@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Surprise 🎁</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #000428, #004e92);
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      margin-top: 15%;
+    }
+
+    h1 {
+      font-size: 50px;
+      color: gold;
+      animation: glow 2s infinite alternate;
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .gift {
+      font-size: 80px;
+      cursor: pointer;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px gold; }
+      to { text-shadow: 0 0 30px orange; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Happy Birthday 🎂</h1>
+    <p>A special surprise is waiting for you...</p>
+
+    <div class="gift">🎁</div>
+    <p>Click the gift to unlock 🎉</p>
+  </div>
+
+</body>
+</html>
